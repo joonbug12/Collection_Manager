@@ -1,3 +1,4 @@
+package collectionmanager;
 /**
  * This class represents a collection of albums
  * Array of album objects represents the albums in a collection

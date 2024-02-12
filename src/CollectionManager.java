@@ -1,3 +1,4 @@
+package collectionmanager;
 import java.util.Scanner;
 /**
  *This class implements the functionalities of the other classes to correctly create each album instance.

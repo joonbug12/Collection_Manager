@@ -1,3 +1,4 @@
+package collectionmanager;
 import java.util.Calendar;
 /**
  * Represents a date with the day, month, and year
@@ -155,18 +156,21 @@ public class Date implements Comparable<Date>{
     }
     /**
      * setter method
+     * @param day new day
      */
     public void setDay(int day) {
         this.day = day;
     }
     /**
      * setter method
+     * @param month new month
      */
     public void setMonth(int month) {
         this.month = month;
     }
     /**
      * setter method
+     * @param year new year
      */
     public void setYear(int year) {
         this.year = year;
@@ -200,7 +204,7 @@ public class Date implements Comparable<Date>{
      * test1
      */
     private static void febNonLeap(){
-        Date date = new Date(2,29,2016);
+        Date date = new Date(2,29,2015);
         boolean expected = false;
         boolean actual = date.isValid();
         System.out.println("Testcase 1: # of days in February in a non-leap year is 28");

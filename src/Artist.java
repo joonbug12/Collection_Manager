@@ -1,3 +1,4 @@
+package collectionmanager;
 /**
  * This class represents an artist with a date of birth and a name
  * @author Joon Song, Connor Powell
@@ -57,6 +58,7 @@ public class Artist implements Comparable <Artist> {
 
     /**
      * getter method
+     * @return name
      */
     public String getName() {
         return name;
@@ -79,7 +81,7 @@ public class Artist implements Comparable <Artist> {
     }
     /**
      * getter method
-     * return dob
+     * @return dob
      */
     public Date getBorn() {
         return born;
@@ -133,7 +135,7 @@ public class Artist implements Comparable <Artist> {
     private static void sameNameFirstBornBeforeSecond(){
         Artist artist = new Artist("Joon",new Date(12,12,2003));
         Artist artist2 = new Artist("Joon",new Date(12,13,2003));
-        int expected = -1;
+        int expected = 1;
         int actual = artist.compareTo(artist2);
         System.out.println("Test case 3: Joon and Joon have the same name but the first one is born the day before");
         testResult(artist,artist2, expected, actual);
@@ -144,7 +146,7 @@ public class Artist implements Comparable <Artist> {
     private static void sameNameFirstBornAfterSecond(){
         Artist artist = new Artist("CoNNor",new Date(12,12,2002));
         Artist artist2 = new Artist("COnnor",new Date(10,13,2001));
-        int expected = 1;
+        int expected = -1;
         int actual = artist.compareTo(artist2);
         System.out.println("Test case 4: Connor and Connor have the same name but the first one is born after");
         testResult(artist,artist2, expected, actual);

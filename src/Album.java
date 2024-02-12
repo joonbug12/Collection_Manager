@@ -1,3 +1,4 @@
+package collectionmanager;
 /**
  * This class is used to create multiple album objects giving it a title, artist, genre, release, date, and rating
  * Implements the rating of each album onto a linked list. Average rating can be taken by traversing the rating ll.
