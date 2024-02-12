@@ -1,3 +1,4 @@
+package collectionmanager;
 /**
  * This class is a node class(Rating) where star is the data within the node and next refers to the next node of the ll.
  * @author Joon Song, Connor Powell
@@ -19,7 +20,7 @@ public class Rating {
 
     /**
      * getter method
-     * return star rating
+     * @return star rating
      */
     public int getRating() {
         return this.star;
